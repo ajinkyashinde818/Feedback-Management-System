@@ -42,5 +42,8 @@ app.post('/api/feedbacks', async (req, res) => {
     }
 });
 
-app.listen(PORT, () => console.log(`Server running at http://localhost:${PORT}`));
+app.listen(PORT, () => {
+    console.log(`Server running at http://localhost:${PORT}`);
+    console.log(`Application is live at http://localhost:${PORT}`);
+});
 
