@@ -1,0 +1,10 @@
+services:
+  - type: web
+    name: my-node-app
+    env: node
+    buildCommand: npm install
+    startCommand: node server.js  # Change this if your entry file is different
+    plan: free
+    envVars:
+      - key: MONGO_URI
+        value: mongodb+srv://feedbackuser:<password>@cluster0.mongodb.net/feedbackDB?retryWrites=true&w=majority
